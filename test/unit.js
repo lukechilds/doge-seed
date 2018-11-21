@@ -18,9 +18,9 @@ test('Seed phrases contain the words "much", "such" and "very"', t => {
 
 test('Don\'t include the same Doge modifier twice', t => {
 	new Array(1000).fill().forEach(() => {
-			const words = dogeSeed().split(' ');
-			
-			t.not(words[0], words[2]);
+		const words = dogeSeed().split(' ');
+
+		t.not(words[0], words[2]);
 	});
 });
 
