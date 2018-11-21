@@ -5,6 +5,7 @@
   "author": "Luke Childs <lukechilds123@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bip39": "^2.5.0"
+    "bip39": "^2.5.0",
+    "randombytes": "^2.0.6"
   }
 }
