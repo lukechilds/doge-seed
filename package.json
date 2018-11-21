@@ -1,6 +1,6 @@
 {
   "name": "doge-seed",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Dank mnemonic seed phrases",
   "main": "src/index.js",
   "author": "Luke Childs <lukechilds123@gmail.com>",
