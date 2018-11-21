@@ -1,0 +1,10 @@
+{
+  "name": "doge-seed",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "author": "Luke Childs <lukechilds123@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bip39": "^2.5.0"
+  }
+}
