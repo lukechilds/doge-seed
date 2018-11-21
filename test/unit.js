@@ -21,3 +21,11 @@ test('Default seed phrase length is 12 words', t => {
 
 	t.is(seedPhrase.split(' ').length, 12);
 });
+
+test('Bit length is configurable', t => {
+	t.is(dogeSeed(128).split(' ').length, 12);
+	t.is(dogeSeed(160).split(' ').length, 15);
+	t.is(dogeSeed(192).split(' ').length, 18);
+	t.is(dogeSeed(224).split(' ').length, 21);
+	t.is(dogeSeed(256).split(' ').length, 24);
+});
