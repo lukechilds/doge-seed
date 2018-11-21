@@ -29,3 +29,13 @@ test('Bit length is configurable', t => {
 	t.is(dogeSeed(224).split(' ').length, 21);
 	t.is(dogeSeed(256).split(' ').length, 24);
 });
+
+test('Throws on invalid bit length', t => {
+	t.throws(() => dogeSeed(-1));
+	t.throws(() => dogeSeed(0));
+	t.throws(() => dogeSeed(1));
+	t.throws(() => dogeSeed(1.5));
+	t.throws(() => dogeSeed(129));
+	t.throws(() => dogeSeed(219.5));
+	t.throws(() => dogeSeed(512));
+});
