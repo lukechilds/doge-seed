@@ -5,13 +5,17 @@
   "author": "Luke Childs <lukechilds123@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "xo"
+    "test": "xo && nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "bip39": "^2.5.0",
     "randombytes": "^2.0.6"
   },
   "devDependencies": {
+    "ava": "^0.25.0",
+    "coveralls": "^3.0.2",
+    "nyc": "^13.1.0",
     "xo": "^0.23.0"
   }
 }
