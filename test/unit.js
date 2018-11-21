@@ -16,6 +16,13 @@ test('Seed phrases contain the words "much", "such" and "very"', t => {
 	t.true(words.includes('very'));
 });
 
+test('Don\'t include the same Doge modifier twice', t => {
+	new Array(1000).fill().forEach(() => {
+			const seedPhrase = dogeSeed();
+			t.not(seedPhrase.split(' ')[0], seedPhrase.split(' ')[2]);
+	});
+});
+
 test('Default seed phrase length is 12 words', t => {
 	const seedPhrase = dogeSeed();
 
