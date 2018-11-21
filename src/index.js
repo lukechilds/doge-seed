@@ -20,7 +20,7 @@ const binaryToBytes = binaryString => Buffer.from(
 const randomNumberBetween = (min, max) => Math.floor((parseInt(randomBytes(1).toString('hex'), 16) / 256 * (max - min + 1)) + min);
 
 const dogeSeed = bits => {
-	bits = bits || 128;
+	bits = typeof bits === 'undefined' ? 128 : bits;
 	if (bits <= 0 || bits % 8 !== 0) {
 		throw new TypeError('bits must be divisible by 8');
 	}
