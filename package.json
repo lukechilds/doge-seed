@@ -4,8 +4,14 @@
   "main": "src/index.js",
   "author": "Luke Childs <lukechilds123@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "xo"
+  },
   "dependencies": {
     "bip39": "^2.5.0",
     "randombytes": "^2.0.6"
+  },
+  "devDependencies": {
+    "xo": "^0.23.0"
   }
 }
