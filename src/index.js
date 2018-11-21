@@ -19,8 +19,8 @@ const binaryToBytes = binaryString => Buffer.from(
 
 const randomNumberBetween = (min, max) => Math.floor(parseInt(randomBytes(1).toString('hex'), 16) / 256 * (max - min + 1) + min);
 
-const dogeSeed = (strength = 128) => {
-  const entropy = randomBytes(strength / 8);
+const dogeSeed = (bits = 128) => {
+  const entropy = randomBytes(bits / 8);
   const words = bytesToBinary(entropy).match(/.{1,11}/g);
 
   const dogeModifiers = [
