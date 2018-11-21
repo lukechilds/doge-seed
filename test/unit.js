@@ -18,15 +18,16 @@ test('Seed phrases contain the words "much", "such" and "very"', t => {
 
 test('Don\'t include the same Doge modifier twice', t => {
 	new Array(1000).fill().forEach(() => {
-			const seedPhrase = dogeSeed();
-			t.not(seedPhrase.split(' ')[0], seedPhrase.split(' ')[2]);
+			const words = dogeSeed().split(' ');
+			
+			t.not(words[0], words[2]);
 	});
 });
 
 test('Default seed phrase length is 12 words', t => {
-	const seedPhrase = dogeSeed();
+	const words = dogeSeed().split(' ');
 
-	t.is(seedPhrase.split(' ').length, 12);
+	t.is(words.length, 12);
 });
 
 test('Bit length is configurable', t => {
