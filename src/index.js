@@ -20,6 +20,10 @@ const binaryToBytes = binaryString => Buffer.from(
 const randomNumberBetween = (min, max) => Math.floor(parseInt(randomBytes(1).toString('hex'), 16) / 256 * (max - min + 1) + min);
 
 const dogeSeed = (bits = 128) => {
+  if (bits <= 0 || bits % 8 !== 0) {
+    throw TypeError('bits must be divisible by 8');
+  }
+
   const entropy = randomBytes(bits / 8);
   const words = bytesToBinary(entropy).match(/.{1,11}/g);
 
