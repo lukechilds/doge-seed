@@ -15,3 +15,9 @@ test('Seed phrases contain the words "much", "such" and "very"', t => {
 	t.true(words.includes('such'));
 	t.true(words.includes('very'));
 });
+
+test('Default seed phrase length is 12 words', t => {
+	const seedPhrase = dogeSeed();
+
+	t.is(seedPhrase.split(' ').length, 12);
+});
