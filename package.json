@@ -1,9 +1,17 @@
 {
   "name": "doge-seed",
   "version": "0.0.0",
+  "description": "Dank mnemonic seed phrases",
   "main": "src/index.js",
   "author": "Luke Childs <lukechilds123@gmail.com>",
   "license": "MIT",
+  "repository": "lukechilds/doge-seed",
+  "keywords": [
+    "bitcoin",
+    "cryptocurrency",
+    "seed",
+    "phrase"
+  ],
   "scripts": {
     "test": "xo && nyc ava",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
