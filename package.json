@@ -10,7 +10,8 @@
     "bitcoin",
     "cryptocurrency",
     "seed",
-    "phrase"
+    "phrase",
+    "bip39"
   ],
   "scripts": {
     "test": "xo && nyc ava",
