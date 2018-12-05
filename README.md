@@ -82,6 +82,10 @@ You can compare the entropy against standard BIP39 seeds in the table below.
 |21|224 bits|204.585 bits|
 |24|256 bits|236.585 bits|
 
+Although 108.585 bits (12 word doge seed) is a lot of entropy, a Bitcoin private key has 128 bits of entropy, so you probably want your BIP39 seed to have more than or equal that amount to avoid reducing overall security.
+
+**TL;DR:** If for some insane reason you actually use this over a standard BIP39 seed, it would probably be best to use 15 words or more.
+
 ## License
 
 MIT © Luke Childs
