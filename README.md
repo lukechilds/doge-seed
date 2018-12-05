@@ -72,6 +72,16 @@ A doge seed is the same apart from two changes. The first word is one of the thr
 
 </div>
 
+You can compare the entropy against standard BIP39 seeds in the table below.
+
+|Word Count|Standard BIP39 Entropy|Doge Seed Entropy|
+|:---:|:---:|:---:|
+|12|128 bits|108.585 bits|
+|15|160 bits|140.585 bits|
+|18|192 bits|172.585 bits|
+|21|224 bits|204.585 bits|
+|24|256 bits|236.585 bits|
+
 ## License
 
 MIT © Luke Childs
