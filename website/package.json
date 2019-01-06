@@ -13,5 +13,9 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.11.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "when-dom-ready": "^1.2.12"
   }
 }
