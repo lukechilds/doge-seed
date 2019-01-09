@@ -1,8 +1,29 @@
 <html>
-<body>
-  <div class="seed-text"></div>
-  <input class="bits" type="range" min="128" max="256" step="32" value="256" />
-  <button class="generate-seed" type="button">Generate Seed</button>
-  <script async src="./index.js"></script>
-</body>
+  <head>
+    <title>Doge Seed</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="description" content="Dank mnemonic seed phrases."/>
+  </head>
+  <body>
+    <header>
+      <h1>Doge Seed</h1>
+      <h2>very entropy, such secure</h2>
+      <img src="doge.svg" width="256" alt="Shiba Inu"/>
+      <h3>Dank mnemonic seed phrases.</h3>
+    </header>
+
+    <section class="generator">
+      <div class="seed-text"></div>
+      <input class="bits" type="range" min="128" max="256" step="32" value="256" />
+      <button class="generate-seed" type="button">Generate Seed</button>
+    </section>
+
+    <section class="description">
+      <h4>Wut?</h4>
+      <p><strong>Cryptographically secure</strong> mnemonic seed phrases with added dankness. The first four words will be a randomly generated Doge-like sentence.</p>
+      <p>The seed phrases are <strong>fully valid checksummed BIP39 seeds</strong>. They can be used with any cryptocurrency and can be imported into any BIP39 compliant wallet.</p>
+    </section>
+
+    <script async src="./index.js"></script>
+  </body>
 </html>
