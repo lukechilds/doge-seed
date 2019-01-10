@@ -24,15 +24,26 @@ body {
   text-align: center;
 }
 
-.generator .seed-text {
+.generator .seed-text-container {
+  position: relative;
   background-color: rgba(0, 0, 0, 0.05);
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  padding: 1em;
   text-align: center;
   font-size: 1.4em;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  height: 4em;
   margin-bottom: 1em;
+}
+
+.generator .seed-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1em;
 }
 
 .generator .seed-text span:nth-of-type(1),
