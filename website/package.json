@@ -1,0 +1,23 @@
+{
+  "name": "doge-seed-website",
+  "version": "1.0.0",
+  "description": "Website for lukechilds/doge-seed",
+  "main": "index.html",
+  "repository": "lukechilds/doge-seed",
+  "author": "Luke Childs <lukechilds123@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "modern-normalize": "^0.5.0",
+    "nouislider": "^12.1.0",
+    "when-dom-ready": "^1.2.12"
+  }
+}

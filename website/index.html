@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>Doge Seed</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="description" content="Dank mnemonic seed phrases."/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <h1>Doge Seed</h1>
+        <h2>Dank mnemonic seed phrases</h2>
+        <img src="doge.svg" width="256" alt="Shiba Inu"/>
+      </div>
+    </header>
+
+    <section class="generator">
+      <div class="wrapper">
+        <div class="seed-text-container">
+          <div class="seed-text"></div>
+        </div>
+        <strong>Word Count</strong>
+        <div class="bit-slider"></div>
+        <button class="regenerate-seed" type="button">Regenerate Seed</button>
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="wrapper">
+        <h3>Wut?</h3>
+        <p>Doge seeds are <strong>cryptographically secure</strong> mnemonic seed phrases with added dankness. The first four words will be a randomly generated Doge-like sentence.</p>
+        <p>The seed phrases are <strong>fully valid checksummed BIP39 seeds</strong>. They can be used with any cryptocurrency and can be imported into any BIP39 compliant wallet.</p>
+        <p>You can test them here: <a rel="noopener noreferrer" target="_blank" href="https://iancoleman.io/bip39/">iancoleman.io/bip39</a></p>
+
+        <h3>Very entropy, such secure.</h3>
+        <p>The mnemonic is seeded by a cryptographically secure random number generator. However there is a slight reduction in entropy due to the introduction of the doge-isms. A doge seed has about 19.415 fewer bits of entropy than a standard BIP39 seed of equivalent length.</p>
+        <p>Each word in a standard BIP39 mnemonic has 2048 possible values (11 bits of entropy). However a 1 bit checksum is added for every 3 words. These checksum bits reduce the entropy of the last word. That can be expressed as:</p>
+        <div align="center">
+          <p>
+            <img alt="S = log2(2048<sup>W</sup>) - (W/3)" src="https://latex.codecogs.com/svg.latex?S&amp;space;=&amp;space;log2(2048%5E%7BW%7D)&amp;space;-&amp;space;%5Cfrac%7BW%7D%7B3%7D" style="max-width:100%;">
+          </p>
+          <p>
+            <sup>Where S is entropy and W is number of words</sup>
+          </p>
+        </div>
+        <p>A doge seed is the same apart from two changes. The first word is one of the three words "much", "such", or "very". The third word is one of two words from the previous selection that wasn't chosen for the first word. That can be expressed as:</p>
+        <div align="center">
+          <p>
+            <img alt="S = log2(2048<sup>W-2</sup>) + log2(3) + log2(2) - (W/3)" src="https://latex.codecogs.com/svg.latex?S&amp;space;=&amp;space;log2(2048%5E%7BW-2%7D)&amp;space;+&amp;space;log2(3)&amp;space;+&amp;space;log2(2)&amp;space;-&amp;space;%5Cfrac%7BW%7D%7B3%7D" style="max-width:100%;">
+          </p>
+          <p>
+            <sup>Where S is entropy and W is number of words</sup>
+          </p>
+        </div>
+        <p>You can compare the entropy against standard BIP39 seeds in the table below.</p>
+        <div align="center">
+          <table class="entropy-table">
+            <thead>
+              <tr>
+                <th align="center">Word Count</th>
+                <th align="center">Standard BIP39 Entropy</th>
+                <th align="center">Doge Seed Entropy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">12</td>
+                <td align="center">128 bits</td>
+                <td align="center">108.585 bits</td>
+              </tr>
+              <tr>
+                <td align="center">15</td>
+                <td align="center">160 bits</td>
+                <td align="center">140.585 bits</td>
+              </tr>
+              <tr>
+                <td align="center">18</td>
+                <td align="center">192 bits</td>
+                <td align="center">172.585 bits</td>
+              </tr>
+              <tr>
+                <td align="center">21</td>
+                <td align="center">224 bits</td>
+                <td align="center">204.585 bits</td>
+              </tr>
+              <tr>
+                <td align="center">24</td>
+                <td align="center">256 bits</td>
+                <td align="center">236.585 bits</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Although 108.585 bits (12 word doge seed) is a lot of entropy, a Bitcoin private key has 128 bits of entropy, so you probably want your BIP39 seed to have more than or equal that amount to avoid reducing overall security.</p>
+        <p><strong>TL;DR:</strong> If for some insane reason you actually use this over a standard BIP39 seed, it would probably be best to use 15 words or more.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <span class="version"></span>
+        -
+        <a rel="noopener noreferrer" target="_blank" href="//github.com/lukechilds/doge-seed">Source code</a>
+        -
+        <a rel="noopener noreferrer" target="_blank" href="//github.com/lukechilds/doge-seed/issues">Report a bug</a>
+        <div class="me">
+          A thing by <a rel="noopener noreferrer" target="_blank" href="//twitter.com/lukechilds">@lukechilds</a>
+        </div>
+      </div>
+    </footer>
+
+    <script async src="./index.js"></script>
+  </body>
+</html>
