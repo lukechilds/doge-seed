@@ -5,6 +5,10 @@ body {
   background: #f2ede0;
 }
 
+*:focus {
+  outline: none;
+}
+
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
