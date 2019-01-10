@@ -4943,11 +4943,6 @@ wcwidth@^1.0.1:
   dependencies:
     defaults "^1.0.3"
 
-when-dom-ready@^1.2.12:
-  version "1.2.12"
-  resolved "https://registry.yarnpkg.com/when-dom-ready/-/when-dom-ready-1.2.12.tgz#99f46f02ef65dbb2bb2f4b58c44588234e724c98"
-  integrity sha1-mfRvAu9l27K7L0tYxEWII05yTJg=
-
 whet.extend@~0.9.9:
   version "0.9.9"
   resolved "https://registry.yarnpkg.com/whet.extend/-/whet.extend-0.9.9.tgz#f877d5bf648c97e5aa542fadc16d6a259b9c11a1"
