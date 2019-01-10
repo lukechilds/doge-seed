@@ -1,6 +1,6 @@
 # doge-seed
 
-> Dank mnemonic seed phrases
+> Dank mnemonic seed phrases - [dogeseed.com](https://dogeseed.com)
 
 [![Build Status](https://travis-ci.com/lukechilds/doge-seed.svg?branch=master)](https://travis-ci.com/lukechilds/doge-seed)
 [![Coverage Status](https://coveralls.io/repos/github/lukechilds/doge-seed/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/doge-seed?branch=master)
