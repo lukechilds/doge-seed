@@ -7,11 +7,11 @@ const main = async () => {
 
   const seedText = document.querySelector('.seed-text');
   const bits = document.querySelector('.bits');
-  const generateSeedButton = document.querySelector('.generate-seed');
+  const regenerateSeedButton = document.querySelector('.regenerate-seed');
 
   const generateSeed = () => seedText.innerText = dogeSeed(bits.value);
 
-  generateSeedButton.addEventListener('click', generateSeed);
+  regenerateSeedButton.addEventListener('click', generateSeed);
   bits.addEventListener('input', generateSeed);
 
   generateSeed();
