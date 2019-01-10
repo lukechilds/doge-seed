@@ -1,0 +1,38 @@
+@import 'modern-normalize';
+
+body {
+  background: #f2ede0;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 2em;
+  box-sizing: content-box;
+}
+
+.header {
+  padding: 1em 0;
+  text-align: center;
+  background: #fdebbe;
+}
+
+.generator {
+  padding: 1em 0;
+  background: #fdebbe;
+}
+
+.generator .seed-text {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.4em;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.description {
+  padding: 1em 0;
+}
