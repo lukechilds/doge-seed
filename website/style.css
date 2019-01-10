@@ -125,6 +125,7 @@ a:hover {
 .bit-slider .noUi-pips {
   top: 8px;
   pointer-events: none;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .bit-slider .noUi-pips .noUi-marker {
