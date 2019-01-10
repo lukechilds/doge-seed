@@ -20,10 +20,10 @@ body {
 .generator {
   padding: 1em 0;
   background: #fdebbe;
+  text-align: center;
 }
 
 .generator .seed-text {
-  align-items: center;
   background-color: rgba(0, 0, 0, 0.05);
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -31,6 +31,7 @@ body {
   text-align: center;
   font-size: 1.4em;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-bottom: 1em;
 }
 
 .generator .seed-text span:nth-of-type(1),
@@ -87,6 +88,17 @@ body {
 .generator .seed-text[data-word-count="18"] span:nth-of-type(11):before {
   display: block;
   content: '';
+}
+
+.regenerate-seed {
+  margin: 0 auto;
+  padding: 0.6em 1em;
+  border: none;
+  font: inherit;
+  color: #fff;
+  background-color: #52C752;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 .description {
