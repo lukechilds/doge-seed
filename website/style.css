@@ -95,9 +95,10 @@ body {
   color: maroon;
 }
 
-.generator .seed-text[data-word-count="24"] span:nth-of-type(13):before,
+.generator .seed-text[data-word-count="15"] span:nth-of-type(9):before,
+.generator .seed-text[data-word-count="18"] span:nth-of-type(11):before,
 .generator .seed-text[data-word-count="21"] span:nth-of-type(13):before,
-.generator .seed-text[data-word-count="18"] span:nth-of-type(11):before {
+.generator .seed-text[data-word-count="24"] span:nth-of-type(13):before {
   display: block;
   content: '';
 }
