@@ -2,6 +2,14 @@ import 'babel-polyfill';
 import whenDomReady from 'when-dom-ready';
 import dogeSeed from '../';
 
+const bitsToWords = {
+  128: 12,
+  160: 15,
+  192: 18,
+  224: 21,
+  256: 24
+};
+
 const main = async () => {
   await whenDomReady();
 
@@ -10,6 +18,9 @@ const main = async () => {
   const regenerateSeedButton = document.querySelector('.regenerate-seed');
 
   const generateSeed = () => {
+    const wordCount = bitsToWords[bits.value];
+    seedText.dataset.wordCount = wordCount;
+
     const seedPhrase = dogeSeed(bits.value);
     const wrappedSeedPhrase = seedPhrase
       .split(' ')
