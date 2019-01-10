@@ -126,6 +126,10 @@ body {
   background-color: #52C752;
   cursor: pointer;
   border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+.regenerate-seed:hover {
+  background-color: #42a042;
 }
 
 .description {
