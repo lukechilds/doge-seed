@@ -1,6 +1,7 @@
 import 'babel-polyfill';
 import whenDomReady from 'when-dom-ready';
 import dogeSeed from '../';
+import noUiSlider from 'nouislider';
 
 const bitsToWords = {
   128: 12,
@@ -14,24 +15,33 @@ const main = async () => {
   await whenDomReady();
 
   const seedText = document.querySelector('.seed-text');
-  const bits = document.querySelector('.bits');
   const regenerateSeedButton = document.querySelector('.regenerate-seed');
 
+  const bitSlider = noUiSlider.create(document.querySelector('.bit-slider'), {
+    range: {min: 128, max: 256},
+    step: 32,
+    start: 256,
+    pips: {
+      mode: 'steps',
+      density: 1,
+      format: {to: bits => bitsToWords[bits]},
+      filter: (value, step) => step === 0 ? -1 : 1
+    }
+  });
+
   const generateSeed = () => {
-    const wordCount = bitsToWords[bits.value];
+    const bits = Number(bitSlider.get());
+    const seedPhraseWords = dogeSeed(bits).split(' ');
+
+    const wrappedSeedPhrase = seedPhraseWords.map(word => `<span>${word}</span>`).join(' ');
+    const wordCount = seedPhraseWords.length;
+
     seedText.dataset.wordCount = wordCount;
-
-    const seedPhrase = dogeSeed(bits.value);
-    const wrappedSeedPhrase = seedPhrase
-      .split(' ')
-      .map(word => `<span>${word}</span>`)
-      .join(' ');
-
     seedText.innerHTML = wrappedSeedPhrase;
   };
 
   regenerateSeedButton.addEventListener('click', generateSeed);
-  bits.addEventListener('input', generateSeed);
+  bitSlider.on('update', generateSeed);
 
   generateSeed();
 };
