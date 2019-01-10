@@ -10,6 +10,15 @@ body {
   outline: none;
 }
 
+a {
+  color: #F2A51F;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #f25d1f;
+}
+
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
