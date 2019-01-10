@@ -3,6 +3,7 @@
 
 body {
   background: #f2ede0;
+  min-width: 960px;
 }
 
 *:focus {
