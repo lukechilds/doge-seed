@@ -2,6 +2,7 @@ import 'babel-polyfill';
 import whenDomReady from 'when-dom-ready';
 import dogeSeed from '../';
 import noUiSlider from 'nouislider';
+import {version} from '../package.json';
 
 const bitsToWords = {
   128: 12,
@@ -13,6 +14,8 @@ const bitsToWords = {
 
 const main = async () => {
   await whenDomReady();
+
+  document.querySelector('.version').innerText = `v${version}`;
 
   const seedText = document.querySelector('.seed-text');
   const regenerateSeedButton = document.querySelector('.regenerate-seed');
