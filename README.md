@@ -86,6 +86,10 @@ Although 108.585 bits (12 word doge seed) is a lot of entropy, a Bitcoin private
 
 **TL;DR:** If for some insane reason you actually use this over a standard BIP39 seed, it would probably be best to use 15 words or more.
 
+## Related
+
+- [doge-seed-cli](https://github.com/sindresorhus/doge-seed-cli) - Command-line tool
+
 ## License
 
 MIT © Luke Childs
