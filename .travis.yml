@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - '8'
 before_install:
-  - cd website && npm install
+  - (cd website && npm install)
 script: npm test
 after_success: npm run coverage
 notifications:
