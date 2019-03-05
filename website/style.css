@@ -151,6 +151,13 @@ a:hover {
   padding: 1em 0;
 }
 
+code {
+  font-size: 0.8em;
+  background: #d8d8d8;
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+}
+
 table.entropy-table {
   border-spacing: 0;
   border-collapse: collapse;
