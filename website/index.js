@@ -1,8 +1,8 @@
 /* eslint-env browser */
 import 'babel-polyfill';
 import noUiSlider from 'nouislider';
-import dogeSeed from '..';
 import {version} from '../package';
+import dogeSeed from '..';
 
 const bitsToWords = {
 	128: 12,
