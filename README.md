@@ -7,6 +7,8 @@
 [![npm](https://img.shields.io/npm/v/doge-seed.svg)](https://www.npmjs.com/package/doge-seed)
 [![tippin.me](https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@lukechilds/F0918E)](https://tippin.me/@lukechilds)
 
+[![](website/card.png)](https://dogeseed.com)
+
 Generates a cryptographically secure mnemonic seed phrase with added dankness. The first four words will be a randomly generated Doge-like sentence.
 
 The seed phrases are fully valid checksummed BIP39 seeds. They can be used with any cryptocurrency and can be imported into any BIP39 compliant wallet.
