@@ -47,7 +47,7 @@
         <p>Each word in a standard BIP39 mnemonic has 2048 possible values (11 bits of entropy). However a 1 bit checksum is added for every 3 words. These checksum bits reduce the entropy of the last word. That can be expressed as:</p>
         <div align="center">
           <p>
-            <img alt="S = log2(2048<sup>W</sup>) - (W/3)" src="https://latex.codecogs.com/svg.latex?S&amp;space;=&amp;space;log2(2048%5E%7BW%7D)&amp;space;-&amp;space;%5Cfrac%7BW%7D%7B3%7D" style="max-width:100%;">
+            <span data-latex="S = log2(2048^{W}) - \frac{W}{3}">S = log2(2048<sup>W</sup>) - (W/3)</span>
           </p>
           <p>
             <sup>Where S is entropy and W is number of words</sup>
@@ -56,7 +56,7 @@
         <p>A doge seed is the same apart from two changes. The first word is one of the three words "much", "such", or "very". The third word is one of two words from the previous selection that wasn't chosen for the first word. That can be expressed as:</p>
         <div align="center">
           <p>
-            <img alt="S = log2(2048<sup>W-2</sup>) + log2(3) + log2(2) - (W/3)" src="https://latex.codecogs.com/svg.latex?S&amp;space;=&amp;space;log2(2048%5E%7BW-2%7D)&amp;space;+&amp;space;log2(3)&amp;space;+&amp;space;log2(2)&amp;space;-&amp;space;%5Cfrac%7BW%7D%7B3%7D" style="max-width:100%;">
+            <span data-latex="S = log2(2048^{W-2}) + log2(3) + log2(2) - \frac{W}{3}">S = log2(2048<sup>W-2</sup>) + log2(3) + log2(2) - (W/3)</span>
           </p>
           <p>
             <sup>Where S is entropy and W is number of words</sup>

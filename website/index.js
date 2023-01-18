@@ -1,9 +1,15 @@
 /* eslint-env browser */
 import 'babel-polyfill';
 import '@fontsource/comic-neue';
+import teXToSVG from 'tex-to-svg';
 import noUiSlider from 'nouislider';
 import {version} from '../package';
 import dogeSeed from '..';
+
+Array.from(document.querySelectorAll('[data-latex]')).forEach(element => {
+	console.log(element.dataset.latex)
+	element.innerHTML = teXToSVG(element.dataset.latex)
+});
 
 const bitsToWords = {
 	128: 12,

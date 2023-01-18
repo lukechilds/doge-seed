@@ -20,7 +20,8 @@
   "dependencies": {
     "@fontsource/comic-neue": "^4.5.10",
     "bip39": "^2.5.0",
-    "randombytes": "^2.0.6"
+    "randombytes": "^2.0.6",
+    "tex-to-svg": "^0.2.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",
