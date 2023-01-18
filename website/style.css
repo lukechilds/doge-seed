@@ -1,5 +1,5 @@
-@import 'modern-normalize';
-@import 'nouislider/distribute/nouislider.css';
+@import 'npm:modern-normalize';
+@import 'npm:nouislider/distribute/nouislider.css';
 
 body {
   background: #f2ede0;
