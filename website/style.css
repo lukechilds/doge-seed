@@ -60,7 +60,7 @@ a:hover {
   border-radius: 4px;
   text-align: center;
   font-size: 1.4em;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive, sans-serif;
   margin-bottom: 1em;
 }
 

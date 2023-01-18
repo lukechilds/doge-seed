@@ -1,5 +1,6 @@
 /* eslint-env browser */
 import 'babel-polyfill';
+import '@fontsource/comic-neue';
 import noUiSlider from 'nouislider';
 import {version} from '../package';
 import dogeSeed from '..';

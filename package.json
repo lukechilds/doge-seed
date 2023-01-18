@@ -18,6 +18,7 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
+    "@fontsource/comic-neue": "^4.5.10",
     "bip39": "^2.5.0",
     "randombytes": "^2.0.6"
   },
