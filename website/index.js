@@ -1,5 +1,4 @@
 /* eslint-env browser */
-import 'babel-polyfill';
 import '@fontsource/comic-neue';
 import teXToSVG from 'tex-to-svg';
 import noUiSlider from 'nouislider';
