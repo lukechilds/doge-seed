@@ -190,6 +190,14 @@ table.entropy-table tr:nth-child(even) {
   .wrapper {
     padding: 0 1em;
   }
+
+  table.entropy-table {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -199,5 +207,9 @@ table.entropy-table tr:nth-child(even) {
 
   .generator .seed-text {
     font-size: 1.4rem;
+  }
+
+  .footer {
+    font-size: 1.6rem;
   }
 }
