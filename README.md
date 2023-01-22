@@ -2,10 +2,11 @@
 
 > Dank mnemonic seed phrases - [dogeseed.com](https://dogeseed.com)
 
-[![Build Status](https://travis-ci.com/lukechilds/doge-seed.svg?branch=master)](https://travis-ci.com/lukechilds/doge-seed)
 [![Coverage Status](https://coveralls.io/repos/github/lukechilds/doge-seed/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/doge-seed?branch=master)
 [![npm](https://img.shields.io/npm/v/doge-seed.svg)](https://www.npmjs.com/package/doge-seed)
-[![tippin.me](https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@lukechilds/F0918E)](https://tippin.me/@lukechilds)
+[![GitHub Donate](https://badgen.net/badge/GitHub/Sponsor/D959A7?icon=github)](https://github.com/sponsors/lukechilds)
+[![Bitcoin Donate](https://badgen.net/badge/Bitcoin/Donate/F19537?icon=bitcoin)](https://lu.ke/tip/bitcoin)
+[![Lightning Donate](https://badgen.net/badge/Lightning/Donate/F6BC41?icon=bitcoin-lightning)](https://lu.ke/tip/lightning)
 
 [![](website/card.png)](https://dogeseed.com)
 
