@@ -8,7 +8,6 @@ import dogeSeed from '..';
 import reportWebVitals from './vercel-vitals';
 
 Array.from(document.querySelectorAll('[data-latex]')).forEach(element => {
-	console.log(element.dataset.latex)
 	element.innerHTML = teXToSVG(element.dataset.latex)
 });
 
