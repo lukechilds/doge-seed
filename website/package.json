@@ -14,7 +14,8 @@
     "@fontsource/comic-neue": "^4.5.10",
     "modern-normalize": "^0.5.0",
     "nouislider": "^12.1.0",
-    "tex-to-svg": "^0.2.0"
+    "tex-to-svg": "^0.2.0",
+    "web-vitals": "^3.1.1"
   },
   "devDependencies": {
     "buffer": "^5.7.1",
