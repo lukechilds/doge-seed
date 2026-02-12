@@ -8,7 +8,7 @@
 [![Bitcoin Donate](https://badgen.net/badge/Bitcoin/Donate/F19537?icon=bitcoin)](https://lu.ke/tip/bitcoin)
 [![Lightning Donate](https://badgen.net/badge/Lightning/Donate/F6BC41?icon=bitcoin-lightning)](https://lu.ke/tip/lightning)
 
-[![](website/card.png)](https://dogeseed.com)
+[![](website/card.webp)](https://dogeseed.com)
 
 Generates a cryptographically secure mnemonic seed phrase with added dankness. The first four words will be a randomly generated Doge-like sentence.
 
