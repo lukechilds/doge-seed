@@ -1,7 +1,11 @@
 /* eslint-env browser */
 import '@fontsource/comic-neue';
+import '@fontsource/bricolage-grotesque/400.css';
+import '@fontsource/bricolage-grotesque/600.css';
+import '@fontsource/bricolage-grotesque/700.css';
+import '@fontsource/bricolage-grotesque/800.css';
+import '@fontsource/dm-mono/400.css';
 import teXToSVG from 'tex-to-svg';
-import noUiSlider from 'nouislider';
 import {version} from '../package';
 import dogeSeed from '..';
 
@@ -11,33 +15,14 @@ Array.from(document.querySelectorAll('[data-latex]')).forEach(element => {
 	element.innerHTML = teXToSVG(element.dataset.latex)
 });
 
-const bitsToWords = {
-	128: 12,
-	160: 15,
-	192: 18,
-	224: 21,
-	256: 24
-};
-
 document.querySelector('.version').innerText = `v${version}`;
 
 const seedText = document.querySelector('.seed-text');
 const regenerateSeedButton = document.querySelector('.regenerate-seed');
-
-const bitSlider = noUiSlider.create(document.querySelector('.bit-slider'), {
-	range: {min: 128, max: 256},
-	step: 32,
-	start: 256,
-	pips: {
-		mode: 'steps',
-		density: 1,
-		format: {to: bits => bitsToWords[bits]},
-		filter: (value, step) => step === 0 ? -1 : 1
-	}
-});
+const bitSlider = document.querySelector('.bit-slider input');
 
 const generateSeed = () => {
-	const bits = Number(bitSlider.get());
+	const bits = Number(bitSlider.value);
 	const seedPhraseWords = dogeSeed(bits).split(' ');
 
 	const wrappedSeedPhrase = seedPhraseWords.map(word => `<span>${word}</span>`).join(' ');
@@ -48,7 +33,7 @@ const generateSeed = () => {
 };
 
 regenerateSeedButton.addEventListener('click', generateSeed);
-bitSlider.on('update', generateSeed);
+bitSlider.addEventListener('input', generateSeed);
 
 generateSeed();
 
