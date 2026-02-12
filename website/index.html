@@ -1,26 +1,26 @@
 <html>
   <head>
     <title>Doge Seed</title>
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dank mnemonic seed phrases.">
-    <meta property="og:site_name" content="Doge Seed">
-    <meta property="og:title" content="Doge Seed">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="card.png">
-    <meta property="og:description" content="Dank mnemonic seed phrases.">
-    <meta property="og:url" content="https://dogeseed.com">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta name="theme-color" content="#0e0d0b">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Dank mnemonic seed phrases." />
+    <meta property="og:site_name" content="Doge Seed" />
+    <meta property="og:title" content="Doge Seed" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="card.png" />
+    <meta property="og:description" content="Dank mnemonic seed phrases." />
+    <meta property="og:url" content="https://dogeseed.com" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0e0d0b" />
   </head>
   <body>
     <header class="header">
       <div class="wrapper">
         <h1>Doge Seed</h1>
         <h2>Dank mnemonic seed phrases</h2>
-        <img src="doge.svg" width="256" alt="Shiba Inu"/>
+        <img src="doge.svg" width="256" alt="Shiba Inu" />
       </div>
     </header>
 
@@ -31,10 +31,11 @@
         </div>
         <strong>Word Count</strong>
         <div class="bit-slider">
-          <input type="range" min="128" max="256" step="32" value="256">
+          <input type="range" min="128" max="256" step="32" value="256" />
         </div>
         <div class="slider-labels">
-          <span>12</span><span>15</span><span>18</span><span>21</span><span>24</span>
+          <span>12</span><span>15</span><span>18</span><span>21</span
+          ><span>24</span>
         </div>
         <button class="regenerate-seed" type="button">Regenerate Seed</button>
       </div>
@@ -43,32 +44,76 @@
     <section class="description">
       <div class="wrapper">
         <h3>Wut?</h3>
-        <p>Doge seeds are <strong>cryptographically secure</strong> mnemonic seed phrases with added dankness. The first four words will be a randomly generated Doge-like sentence.</p>
-        <p>The seed phrases are <strong>fully valid checksummed BIP39 seeds</strong>. They can be used with any cryptocurrency and can be imported into any BIP39 compliant wallet.</p>
-        <p>You can test them here: <a rel="noopener noreferrer" target="_blank" href="https://iancoleman.io/bip39/">iancoleman.io/bip39</a></p>
-        <p>If you're using this for anything important, you should download this page with <code>File > Save Page As...</code> and run it on an offline machine.</p>
+        <p>
+          Doge seeds are <strong>cryptographically secure</strong> mnemonic seed
+          phrases with added dankness. The first four words will be a randomly
+          generated Doge-like sentence.
+        </p>
+        <p>
+          The seed phrases are
+          <strong>fully valid checksummed BIP39 seeds</strong>. They can be used
+          with any cryptocurrency and can be imported into any BIP39 compliant
+          wallet.
+        </p>
+        <p>
+          You can test them here:
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://iancoleman.io/bip39/"
+            >iancoleman.io/bip39</a
+          >
+        </p>
+        <p>
+          If you're using this for anything important, you should download this
+          page with <code>File > Save Page As...</code> and run it on an offline
+          machine.
+        </p>
 
         <h3>Very entropy, such secure.</h3>
-        <p>The mnemonic is seeded by a cryptographically secure random number generator. However there is a slight reduction in entropy due to the introduction of the doge-isms. A doge seed has about 19.415 fewer bits of entropy than a standard BIP39 seed of equivalent length.</p>
-        <p>Each word in a standard BIP39 mnemonic has 2048 possible values (11 bits of entropy). However a 1 bit checksum is added for every 3 words. These checksum bits reduce the entropy of the last word. That can be expressed as:</p>
+        <p>
+          The mnemonic is seeded by a cryptographically secure random number
+          generator. However there is a slight reduction in entropy due to the
+          introduction of the doge-isms. A doge seed has about 19.415 fewer bits
+          of entropy than a standard BIP39 seed of equivalent length.
+        </p>
+        <p>
+          Each word in a standard BIP39 mnemonic has 2048 possible values (11
+          bits of entropy). However a 1 bit checksum is added for every 3 words.
+          These checksum bits reduce the entropy of the last word. That can be
+          expressed as:
+        </p>
         <div align="center">
           <p>
-            <span data-latex="S = log2(2048^{W}) - \frac{W}{3}">S = log2(2048<sup>W</sup>) - (W/3)</span>
+            <span data-latex="S = \log_2(2048^{W}) - \frac{W}{3}"
+              >S = log2(2048<sup>W</sup>) - (W/3)</span
+            >
           </p>
           <p>
             <sup>Where S is entropy and W is number of words</sup>
           </p>
         </div>
-        <p>A doge seed is the same apart from two changes. The first word is one of the three words "much", "such", or "very". The third word is one of two words from the previous selection that wasn't chosen for the first word. That can be expressed as:</p>
+        <p>
+          A doge seed is the same apart from two changes. The first word is one
+          of the three words "much", "such", or "very". The third word is one of
+          two words from the previous selection that wasn't chosen for the first
+          word. That can be expressed as:
+        </p>
         <div align="center">
           <p>
-            <span data-latex="S = log2(2048^{W-2}) + log2(3) + log2(2) - \frac{W}{3}">S = log2(2048<sup>W-2</sup>) + log2(3) + log2(2) - (W/3)</span>
+            <span
+              data-latex="S = \log_2(2048^{W-2}) + \log_2(3) + \log_2(2) - \frac{W}{3}"
+              >S = log2(2048<sup>W-2</sup>) + log2(3) + log2(2) - (W/3)</span
+            >
           </p>
           <p>
             <sup>Where S is entropy and W is number of words</sup>
           </p>
         </div>
-        <p>You can compare the entropy against standard BIP39 seeds in the table below.</p>
+        <p>
+          You can compare the entropy against standard BIP39 seeds in the table
+          below.
+        </p>
         <div align="center">
           <table class="entropy-table">
             <thead>
@@ -107,8 +152,17 @@
             </tbody>
           </table>
         </div>
-        <p>Although 108.585 bits (12 word doge seed) is a lot of entropy, a Bitcoin private key has 128 bits of entropy, so you probably want your BIP39 seed to have more than or equal that amount to avoid reducing overall security.</p>
-        <p><strong>TL;DR:</strong> If for some insane reason you actually use this over a standard BIP39 seed, it would probably be best to use 15 words or more.</p>
+        <p>
+          Although 108.585 bits (12 word doge seed) is a lot of entropy, a
+          Bitcoin private key has 128 bits of entropy, so you probably want your
+          BIP39 seed to have more than or equal that amount to avoid reducing
+          overall security.
+        </p>
+        <p>
+          <strong>TL;DR:</strong> If for some insane reason you actually use
+          this over a standard BIP39 seed, it would probably be best to use 15
+          words or more.
+        </p>
       </div>
     </section>
 
@@ -116,17 +170,38 @@
       <div class="wrapper">
         <span class="version"></span>
         -
-        <a rel="noopener noreferrer" target="_blank" href="//github.com/lukechilds/doge-seed">Source code</a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="//github.com/lukechilds/doge-seed"
+          >Source code</a
+        >
         -
-        <a rel="noopener noreferrer" target="_blank" href="//github.com/lukechilds/doge-seed/issues">Report a bug</a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="//github.com/lukechilds/doge-seed/issues"
+          >Report a bug</a
+        >
         <div class="me">
-          A thing by <a rel="noopener noreferrer" target="_blank" href="//lukechilds.co">@lukechilds</a>
+          A thing by
+          <a rel="noopener noreferrer" target="_blank" href="//lukechilds.co"
+            >@lukechilds</a
+          >
         </div>
       </div>
     </footer>
 
     <script type="module" src="./index.js"></script>
-    <script defer src="https://dogeseed.com/_vercel/insights/script.js"></script>
-    <script defer data-api="https://metrics.lu.ke/api/event" data-domain="dogeseed.com" src="https://metrics.lu.ke/js/script.js"></script>
+    <script
+      defer
+      src="https://dogeseed.com/_vercel/insights/script.js"
+    ></script>
+    <script
+      defer
+      data-api="https://metrics.lu.ke/api/event"
+      data-domain="dogeseed.com"
+      src="https://metrics.lu.ke/js/script.js"
+    ></script>
   </body>
 </html>

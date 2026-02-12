@@ -5,14 +5,15 @@ import '@fontsource/bricolage-grotesque/600.css';
 import '@fontsource/bricolage-grotesque/700.css';
 import '@fontsource/bricolage-grotesque/800.css';
 import '@fontsource/dm-mono/400.css';
-import teXToSVG from 'tex-to-svg';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
 import {version} from '../package';
 import dogeSeed from '..';
 
 import reportWebVitals from './vercel-vitals';
 
 Array.from(document.querySelectorAll('[data-latex]')).forEach(element => {
-	element.innerHTML = teXToSVG(element.dataset.latex)
+	katex.render(element.dataset.latex, element, {throwOnError: false});
 });
 
 document.querySelector('.version').innerText = `v${version}`;
